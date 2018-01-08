@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<style>
+body{
+background-color:black;}
+.heading{
+text-align:center;
+font-size:100px;
+color:red;
+font-family:verdana;
+
+}
+
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+ul.pagination li a.active {
+    background-color: teal;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: black;
+color:white;}
+.center{text-align:center;}
+
+.button {
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button:hover{
+background-color:red;
+color:white;}
+
+
+#div1 {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+color:white;
+font-size:50px;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+#div1 {-webkit-animation-timing-function: linear;}
+
+/* Standard syntax */
+#div1 {animation-timing-function: linear;}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 500px;}
+}
+
+
+
+</style>
+</head>
+<body>
+<a href="mainpage.html" class="button">«HOME</a>
+<div class="heading">
+OUR SPONSORS
+</div>
+<br>
+
+<img  src="https://c1.staticflickr.com/5/4045/4704236172_e6e6eebf39_z.jpg" alt="burgerking"  width="200" height="150" hspace="60">
+<img  src="http://bluemoonbeachgrill.com/wp-content/uploads/2015/07/zomato-logo.png" alt="Zomato"  width="200" height="150" hspace="60">
+<img  src="http://d152j5tfobgaot.cloudfront.net/wp-content/uploads/2014/02/Paytm-Logo-new4.jpg" alt="Paytm"  width="200" height="150" hspace="60">
+<img  src="http://www.americanbankingnews.com/logos/jpmorgan-chase-logo.jpg" alt="Jp Morgan"   width="200" height="150" hspace="60"><br>
+<br>
+<br>
+<img  src="http://www.animationxpress.com/wp-content/uploads/2015/04/Moonfrog_Labs_logo.jpg" alt="moonfrog"width="200" height="150" hspace="60">
+<img  src="http://static.dnaindia.com/sites/default/files/2015/11/20/396750-sbmieq3o400x400-swiggy-logo.jpg" alt="swiggy" width="200" height="150" hspace="60">
+<img  src="https://ayushmaheshwari.files.wordpress.com/2012/03/radio-mirchi-jpeg.jpg" alt="radiomirchi" width="200" height="150" hspace="60">
+<img  src="http://www.logospike.com/wp-content/uploads/2014/11/Hp_logo-3.jpg" alt="hp" width="200" height="150" hspace="60"><br>
+<br>
+<br>
+<br>
+ 
+
+<div id="div1">WE WOULD LIKE TO THANK OUR SPONSORS....</div>
+<br>
+<br>
+
+<div class="center">
+<ul class="pagination">
+  <li><a href="udbhavsecond.html">«</a></li>
+  <li><a  href="udbhavfirst.html">1</a></li>
+  <li><a href="udbhavsecond.html">2</a></li>
+  <li><a class="active" href="#">3</a></li>
+  <li><a href="#">»</a></li>
+</ul>
+</div>
+</body>
+</html>

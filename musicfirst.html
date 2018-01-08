@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<style>
+
+body{
+background-color:black;
+}
+
+.bgimg-1{
+     background-attachment: fixed; /* parallax effect not to be there make it background-attachment:scroll */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.bgimg-1{
+background-image: url("http://kettnercreative.com/wp-content/uploads/2015/08/vancouver-stage-lighting.jpg");
+min-height: 500px;
+}
+
+.center{
+background-color:black;
+color:black;
+padding:20px;
+margin: 20px 50px 20px 50px;
+font-family:verdana;
+
+}
+
+.center {
+ -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-width: 200px; /* Chrome, Safari, Opera */
+    -moz-column-width: 200px; /* Firefox */
+    column-width: 200px;
+-webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid;
+    -webkit-column-rule-width: 1px; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 1px; /* Firefox *
+    column-rule-width: 2px;
+    -webkit-column-rule-color: #6b6b47; /* Chrome, Safari, Opera */
+    -moz-column-rule-color: #6b6b47; /* Firefox */
+    column-rule-color: #6b6b47;
+
+}
+
+.bgimg-1 {
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    transform: translate(-35%, -40%);
+    
+}
+span.colour{
+color:teal;
+letter-spacing:4px;
+font-family:verdana;
+font-size:40px;
+}
+span.colour1{
+color:white;
+letter-spacing:2px;
+font-family:courier;
+}
+h1{
+font-family:courier;
+color:lightgrey;
+}
+
+.bottom {
+ margin:20px 20px 20px 20px;
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-width: 100px; /* Chrome, Safari, Opera */
+    -moz-column-width: 100px; /* Firefox */
+    column-width: 100px;
+-webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid;
+    -webkit-column-rule-width: 1px; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 1px; /* Firefox */
+    column-rule-width: 3px;
+    -webkit-column-rule-color: #6b6b47; /* Chrome, Safari, Opera */
+    -moz-column-rule-color: #6b6b47; /* Firefox */
+    column-rule-color: #6b6b47;
+color:white;
+font-family:verdana;
+letter-spacing:1px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color:#6b6b47 ;
+    color: white;
+    border: 2px solid black;
+}
+
+.button1:hover {
+    background-color:#4d004d ;
+    color: white;
+}
+
+.button2 {
+    background-color: #6b6b47;
+    color: white;
+    border: 2px solid black;
+}
+.button2:hover {
+    background-color: #4d004d;
+    color: white;
+}
+.button3{
+background-color: #6b6b47;
+    color: white;
+    border: 2px solid black;
+}
+.button3:hover {
+    background-color:#4d004d;
+    color: white;
+}
+
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active{
+background-color:teal;
+color:white;
+}
+span.col{
+color:teal;
+
+letter-spacing:2px;
+}
+
+
+<!-- .stars{
+background:url("http://desktopbackgrounds4u.com/wp-content/gallery/black-glitter-wallpaper/Glitter-Wallpaper-Photos.jpg");
+background-repeat:no-repeat;
+} -->
+
+
+</style>
+
+</head>
+<body class="w3-container">
+
+<div class="bgimg-1">
+<ul class="sidenav">
+ 
+  <li><a href="musiclogin.html"> Sign out</a></li>
+  <li><a href="musicevents.html">Events</a></li>
+  <li><a href="musicaud1.html">Auditions</a></li>
+<li><a class="active" href="musicfirst.html">FORUM</a></li>
+ <li><a  href="mainpage.html">HOME</a></li>
+<li style="float:left"><a href="#">MUSIC ASSOCIATION</a></li>
+</ul>
+
+
+  <div class="center">
+   <!--  <div class="stars"> -->
+
+     <span class="colour">WELCOME</span><br>
+<span class="colour1">to the Music homepage of MSRIT.<br><br><br>
+Hello folks! Indian music to Acapella,instruments ,goes on and on.What is the wait for?audition for our music team right away.</span>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bottom">
+<h2><b><span class="col">About</span><span class="colour1">Us</span></b></h2>
+Freshers,here is the opportunity you all are waiting for!Showcase your talents and you will be enrolled into our theatre club.You will have a chance to represent the college....
+<br><a href="musicaboutus.html" class="button button1">Read More>></a>
+<h2><b><span class="col">Club</span><span class="colour1">Credits</span></b></h2>
+All of you are aware of the credits system in MSRIT!These extra credentials will look good on your resume.Make the best use of these clubs,folks..<br>
+<a href="musiccreds.html" class="button button2">Read More>></a>
+<h2><b><span class="col">Our</span><span class="colour1">Gallery</span></b></h2>
+From the main fests to the minor events,our photographers never fail to capture the moments.Make sure to have a look at it.
+<a href="musicgallery.html" class="button button3">View Gallery>></a> <!--if you dont mention button in class i.e if u write class="button3 "only then itll be displayed as link not button here. -->
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<script>
+
+var x= /[0-9]/;
+function validate_nm(){
+ 	if(x.test(document.getElementById("name").value))
+alert("Invalid name");
+}
+var y= /[0-9][a-zA-Z_][a-zA-Z_][0-9][0-9][a-zA-z_][a-zA-z_]\d{3}/;
+function validate_usn(){
+ 	if(!y.test(document.getElementById("usn").value))
+alert("Invalid usn");
+}
+
+
+
+function validate_psw()
+{
+    //Store the password field objects into variables ...
+    var pass1 = document.getElementById('pass1');
+    var pass2 = document.getElementById('pass2');
+    //Store the Confimation Message Object ...
+    
+    //Compare the values in the password field 
+    //and the confirmation field
+    if(pass1.value == pass2.value){
+        //The passwords match. 
+        //Set the color to the good color and inform
+        //the user that they have entered the correct password 
+        alert("Passwords match");
+    }else{
+        //The passwords do not match.
+        //Set the color to the bad color and
+        //notify the user.
+        alert("Passwords Do Not Match!");
+    }
+}  
+    
+    
+   
+</script>
+
+<style>
+body{
+background:url("http://i1.ytimg.com/vi/LUvHmGh-KpY/maxresdefault.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+}
+h1{
+text-align:center;
+color:white;
+}
+form{
+border:2px solid white;
+}
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    
+}
+
+
+</style>
+</head>
+<body class="w3-content" style="max-width:400px">
+
+
+      <h1 >INFERNO registration form</h1>
+      
+
+
+      <form class="w3-container w3-card-2 w3-padding-32 w3-red" >
+        <div class="w3-group">
+          <label>Name</label>
+          <input class="w3-input" id="name" name="name" style="width:100%;" type="text" onchange="validate_nm()" required>
+
+        </div>
+        <div class="w3-group">
+          <label>USN</label>
+          <input class="w3-input" id="usn" name="usn" style="width:100%;" type="text" onchange="validate_usn()" required>
+
+ 
+        </div>
+        
+         <div class="w3-group">
+<label> SEMESTER</label>
+
+<select id="sem" name="sem" required>
+
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+     <option value="7">7</option>
+    <option value="8">8</option>
+    
+  </select>
+</div>
+
+<div class="w3-group">
+<label>ENTER USERNAME:</label>
+<input class="w3-input" id="uname" name="uname" style="width:100%;" type="text" required>
+ 
+</div>
+<div class="w3-group">
+<label>ENTER password:</label>
+<input class="w3-input" id="pass1" name="pass1" style="width:100%;" type="password" required>
+</div>
+<div class="w3-group">
+<label>REENTER password:</label>
+<input class="w3-input" id="pass2" name="pass2" style="width:100%;" type="password" onchange="validate_psw()" required>
+</div>
+       <p style="text-align:center;">
+        <input type="submit" value="register">
+</p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

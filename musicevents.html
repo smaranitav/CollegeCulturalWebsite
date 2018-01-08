@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+body{
+
+background:url("http://cdn.paper4pc.com/images/purple-shapes-wallpaper-1.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+
+}
+
+
+.events{
+background-color:black;
+color:white;
+padding:20px;
+text-align:center;
+ margin: 200px 30px 50px 30px;
+font-family:verdana;
+letter-spacing:4px;
+
+}
+.date{
+background-color:#cc0066;
+color:white;
+padding:20px;
+text-align:center;
+max-width:250px;
+font-family:verdana;
+letter-spacing:4px;
+border-top:40px solid #ff66b3;
+margin-left:200px;
+}
+h1{
+font-family:courier;
+color:white;
+font-weight:black;
+letter-spacing:4px;
+}
+
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+  
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;
+color:teal;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+li a , .dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active{
+background-color:teal;
+color:white;
+}
+
+
+</style>
+</head>
+<body>
+
+<ul class="sidenav">
+ 
+  <li><a href="musiclogin.html">Sign out</a></li>
+  <li><a class="active" href="musicevents.html">Events</a></li>
+  <li><a  href="musicaud1.html">Auditions</a></li>
+ <li class="dropdown">
+    <a  href="musicfirst.html" class="dropbtn">FORUM</a>
+    <div class="dropdown-content">
+      <a href="musicaboutus.html">AboutUs</a>
+      <a href="musiccreds.html">Credits</a>
+      <a href="musicgallery.html">Gallery</a>
+    </div>
+  </li>
+<li><a  href="mainpage.html">HOME</a></li>
+<li style="float:left"><a href="#">MUSIC ASSOCIATION</a></li>
+</ul>
+<div class="w3-content" style="max-width:800px;position:relative">
+
+<div class="events">
+<h1>Acapella  event in BMSCE. </h1><br>
+<div class="date">
+<h2><b>August 21</b></h2>
+</div>
+<h3>VENUE:AUDITORIUM<br>
+TIME:1pm<br>
+CONTACT:9985004321<br>
+</h3>
+</div>
+<div class="events"><h1>Classical music in BMSIT. </h1><br>
+<div class="date">
+<h2><b>July 27</b></h2>
+</div>
+<h3>VENUE:DES SEMINAR HALL<br>
+TIME:11am<br>
+CONTACT:9982033780<br>
+</h3></div>
+<div class="events"><h1>Western solo</h1><br>
+<div class="date">
+<h2><b>Nov 12</b></h2>
+</div>
+<h3>VENUE:LHC SEMINAR HALL<br>
+TIME:2pm-5pm<br>
+CONTACT:9980565103<br>
+</h3></div>
+
+<div class="events"><h1>EDFC(college event)</h1><br>
+<div class="date">
+<h2><b>April 12</b></h2>
+</div>
+<h3>VENUE:MAIN AUDITORIUM<br>
+TIME:3pm-6pm<br>
+CONTACT:9388066789<br>
+</h3></div>
+<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+<a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("events");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+</body>
+</html>
+
+
+

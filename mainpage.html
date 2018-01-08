@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 , .bgimg-4 {
+    opacity: 0.7;
+    background-attachment: fixed; /* parallax effect not to be there make it background-attachment:scroll */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-right:80px;
+padding-left:80px;   
+
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+.button3{
+background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+.button3:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("http://www.myprivatetutor.com/blog/wp-content/uploads/2015/01/MS-Ramaiah-Institute-of-Technology.jpg");
+    min-height: 100%;
+}
+
+/* Second image (dance) */
+.bgimg-2 {
+    background-image: url("http://www.thehindu.com/multimedia/dynamic/00003/KATHAK_DANCE_3819g.jpg");
+    min-height: 400px;
+}
+
+/* Third image (music) */
+.bgimg-3 {
+    background-image: url("https://static01.nyt.com/images/2012/04/27/world/americas/27-capella-IndiaInk/27-capella-IndiaInk-blog480.jpg");
+    min-height: 400px;
+}
+
+/* fourth image (drama) */
+.bgimg-4{
+    background-image: url("http://www.punchtantraa.com/uploads/fileManager/about-us-mime.jpg");
+    min-height: 400px;
+}
+
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+
+
+/* Turn off parallax scrolling for tablets and mobiles */
+@media only screen and (max-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 , .bgimg-4 , .bgimg-5{
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar" id="myNavbar">
+    <li><a href="#" class="w3-padding-large">HOME</a></li>
+    <li class="w3-hide-small w3-right">
+      <a href="#" class="w3-padding-large w3-hover-red"><i class="fa fa-search"></i></a>
+    </li>
+  </ul>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-opacity w3-display-container">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">CULTURAL<span class="w3-hide-small">FORUM</span> 
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT THIS WEBSITE:</h3>
+  <p class="w3-center"><em>A platform for cultural activities</em></p>
+  <p style="font-family:verdana;"><b>A good exposure to the cultural activities along with the college curriculum.The students can login with their usn and stay updated with the upcoming events.
+MSRIT is an autonomous university with an exposure to the cultural activities.Make the best use of this forum.<br>
+Here are a few clubs in the college.<br>
+click on the clubs below and discover a whole new experience. </b></p> 
+</div>
+<p style="text-align:center";>
+<a href="udbhavfirst.html" class="button button1">OUR UDBHAV PREVIEW</a><br>
+
+<button class="button button1">DANCE</button>
+<a href="musiclogin.html" class="button button2">MUSIC</a>
+
+<a href="dramalogin.html" class="button button3">THEATRE</a>
+
+</p>
+<!-- Second Parallax Image  -->
+<div class="bgimg-2 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-light-grey w3-wide">DANCE</span>
+  </div>
+</div>
+<!-- Third Parallax Image  -->
+<div class="bgimg-3 w3-display-container">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-black w3-wide">MUSIC</span>
+  </div>
+</div>
+
+<!-- fourth -->
+
+<div class="bgimg-4 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-light-grey w3-wide">THEATRE</span>
+  </div>
+</div>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width , initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<style>
+body{
+background-color:black;
+font-family: "Lato", sans-serif;}
+.heading{
+background-color:#ccccb3;
+color:black;
+padding:20px;
+text-align:center;
+margin:10px 200px 10px 200px;
+font-family:verdana;
+letter-spacing:4px;
+opacity:0.5;
+}
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active{
+background-color:teal;
+color:white;
+}
+
+
+.news {
+ margin:20px 20px 20px 20px;
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-width: 100px; /* Chrome, Safari, Opera */
+    -moz-column-width: 100px; /* Firefox */
+    column-width: 100px;
+-webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid;
+    -webkit-column-rule-width: 1px; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 1px; /* Firefox */
+    column-rule-width: 3px;
+    -webkit-column-rule-color: #6b6b47; /* Chrome, Safari, Opera */
+    -moz-column-rule-color: #6b6b47; /* Firefox */
+    column-rule-color: #6b6b47;
+color:white;
+font-family:verdana;
+letter-spacing:1px;
+}
+
+.bgimg-1{
+     background-attachment: scroll; /* parallax effect not to be there make it background-attachment:scroll */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.bgimg-1{
+background-image: url("http://4.bp.blogspot.com/-IPES4UypANU/Ut8y3CY14KI/AAAAAAAAC08/pBXUa_0y2KA/s1600/LightsCameraAction-BlogIMG3.png");
+min-height: 400px;
+}
+.bgimg-1:hover{
+opacity:0.4;
+}
+span.colour{
+color:white;
+letter-spacing:2px;
+}
+span.colour1{
+color:#ff00ff;
+letter-spacing:2px;
+}
+span.colour2{
+color:white;
+letter-spacing:1px;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color:#6b6b47 ;
+    color: white;
+    border: 2px solid black;
+}
+
+.button1:hover {
+    background-color:#4d004d ;
+    color: white;
+}
+
+.button2 {
+    background-color: #6b6b47;
+    color: white;
+    border: 2px solid black;
+}
+.button2:hover {
+    background-color: #4d004d;
+    color: white;
+}
+.button3{
+background-color: #6b6b47;
+    color: white;
+    border: 2px solid black;
+}
+.button3:hover {
+    background-color:#4d004d;
+    color: white;
+}
+
+
+</style>
+</head>
+<body>
+<ul class="sidenav">
+ 
+  
+  
+ <li><a  href="dramalogin.html">Signout</a></li>
+<li><a class="active" href="dramafirst.html">Forum</a></li>
+
+<li style="float:left"><a href="mainpage.html">HOME</a></li>
+</ul>
+
+<div class="heading">
+
+<h1>THEATRE ASSOCIATION</h1>
+
+</div>
+<div class="bgimg-1">
+
+</div>
+<br>
+<br>
+<div class="news">
+<h2><b><span class="colour">Auditions</span><span class="colour1">2016</span></b></h2>
+Freshers,here is the opportunity you all are waiting for!Showcase your talents and you will be enrolled into our theatre club.You will have a chance to represent the college....
+<br><a href="dramaaud1.html" class="button button1">Read More>></a>
+<h2><b><span class="colour">What's</span><span class="colour1">Happening?</span></b></h2>
+<span class="colour2">12/08/16</span>-->Monoacting event at BMSCE.
+<span class="colour2">14/08/16</span>-->Group play event at RVCE.
+<span class="colour2">21/08/16</span>-->Dramatic act about global warmin awareness at LHC Stairs.<br>
+<a href="dramaevents.html" class="button button2">Read More>></a>
+<h2><b><span class="colour">Club</span><span class="colour1">Credits</span></b></h2>
+All of you are aware of the credits system in MSRIT!These extra credentials will look good on your resume.Make the best use of these clubs,folks..<br>
+<a href="dramacreds.html" class="button button3">Read More>></a> <!--if you dont mention button in class i.e if u write class="button3 "only then itll be displayed as link not button here. -->
+</div>
+
+
+
+</body>
+</html>
+

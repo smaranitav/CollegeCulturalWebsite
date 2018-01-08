@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+body{
+background:url("http://dancingwithpain.com/wordpress/wp-content/themes/dancingwithpain/files/dance-group1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+border: 2px solid red;
+}
+
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    
+}
+</style>
+</head>
+<body class="w3-content"  style="max-width:400px">
+
+
+      <h1 style="text-align:center;">BLACK ILLUSION registration form</h1>
+      
+      <form class="w3-container w3-card-2 w3-padding-32 w3-white" >
+        <div class="w3-group">
+          <label>Name</label>
+          <input class="w3-input" id="name" name="name" style="width:100%;" type="text" onchange="valName()" required>
+
+        </div>
+        <div class="w3-group">
+          <label>USN</label>
+          <input class="w3-input" id="usn" name="usn" style="width:100%;" type="text" onchange="valUsn()" required>
+
+ 
+        </div>
+        
+         <div class="w3-group">
+<label> SEMESTER</label>
+
+<select id="sem" name="semester" required>
+
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+     <option value="7">7</option>
+    <option value="8">8</option>
+    
+  </select>
+</div>
+
+<div class="w3-group">
+<label>ENTER USERNAME:</label>
+<input class="w3-input" id="uname" name="uname" style="width:100%;" type="text" onchange="valUname()" required>
+ 
+</div>
+<div class="w3-group">
+<label>ENTER password:</label>
+<input class="w3-input" id="psw" name="password" style="width:100%;" type="password" required>
+</div>
+<div class="w3-group">
+<label>REENTER password:</label>
+<input class="w3-input" id="psw1" name="password" style="width:100%;" type="password" required>
+</div>
+       <p style="text-align:center;">
+        <input type="submit" value="register">
+</p>
+      </form>
+
+    
+
+</div>
+  </div>
+</body>
+</html>

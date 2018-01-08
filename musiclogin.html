@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<style>
+body{
+background:url("http://img.wallpaperfolder.com/f/5D29DAC9FE78/rock-concert-lights-stage.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    color:blue;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: brown ;
+    color: yellow;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: green;
+}
+
+div.form {
+    border-radius: 35px;
+    background-color:black;
+
+    padding: 20px;
+margin: 100px 500px 80px 500px;
+    opacity:0.7;
+}
+form{
+color:white;
+}
+.button {
+
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color:black ;
+    color: white;
+    border: 5px solid black;
+}
+
+.button1:hover {
+    background-color:pink;
+    color: black;
+}
+.button2 {
+    background-color:black;
+    color: white;
+    border: 5px solid black;
+}
+
+.button2:hover {
+    background-color:pink ;
+    color: black;
+}
+ .heading{
+font-family:verdana;
+font-size:40px;
+color:black;
+text-align:center;
+letter-spacing:3px;
+}
+</style>
+</head>
+<body>
+<div class="heading">
+<b>MUSIC CLUB OF MSRIT</b>
+</div>
+<div class="form">
+  <form action="">
+    <label>USERNAME</label>
+    <input type="text" id="uname" name="uname" required>
+
+    <label>PASSWORD</label>
+    <input type="password" id="psw" name="password" required>
+
+   
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<p style="text-align:center;">
+<a href="musicreg.html" class="button button1">REGISTRATIONS-MUSIC>></a><br>
+<a href="mainpage.html" class="button button2">BACK TO MAIN PAGE>></a>
+</p>
+</body>
+</html>

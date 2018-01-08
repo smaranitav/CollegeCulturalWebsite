@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+body{
+background:url("https://thumbs.dreamstime.com/x/vintage-movie-film-strip-countdown-border-over-grunge-background-40380039.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active{
+background-color:teal;
+color:white;
+}
+
+
+
+.events{
+background-color:black;
+color:white;
+padding:20px;
+text-align:center;
+margin: 250px 30px 50px 30px;
+font-family:verdana;
+letter-spacing:4px;
+
+}
+.date{
+background-color:#cc5200;
+color:black;
+padding:20px;
+text-align:center;
+margin-left:230px;
+font-family:verdana;
+letter-spacing:4px;
+border-top:40px solid #ff751a;
+max-width:200px;
+}
+h1{
+font-family:courier;
+color:white;
+font-weight:black;
+letter-spacing:4px;
+}
+
+</style>
+</head>
+<body>
+<ul class="sidenav">
+ 
+  <li><a href="dramalogin.html">Sign out</a></li>
+<li><a   href="dramacreds.html">Credits</a></li>
+  <li><a class="active" href="dramaevents.html">Events</a></li>
+  <li><a  href="dramaaud1.html">Auditions</a></li>
+ 
+<li><a  href="dramafirst.html">Forum</a></li>
+<li><a  href="mainpage.html">Home</a></li>
+<li style="float:left"><a href="#">THEATRE ASSOCIATION</a></li>
+</ul>
+<div class="w3-content" style="max-width:800px;position:relative">
+
+<div class="events">
+<h1>Monoacting event in BMSCE. </h1><br>
+<div class="date">
+<h2><b>July 21</b></h2>
+</div>
+<h3>VENUE:AUDITORIUM<br>
+TIME:3pm<br>
+CONTACT:9988003321<br>
+</h3>
+</div>
+<div class="events"><h1>MIME event in BMSIT. </h1><br>
+<div class="date">
+<h2><b>July 27</b></h2>
+</div>
+<h3>VENUE:DES SEMINAR HALL<br>
+TIME:11am<br>
+CONTACT:9988066789<br>
+</h3></div>
+<div class="events"><h1>Rajyotsava special(KANNADA)</h1><br>
+<div class="date">
+<h2><b>Nov 1</b></h2>
+</div>
+<h3>VENUE:LHC STAIRS<br>
+TIME:2pm-5pm<br>
+CONTACT:9845233441<br>
+</h3></div>
+
+<div class="events"><h1>EDFC(college event)</h1><br>
+<div class="date">
+<h2><b>April 12</b></h2>
+</div>
+<h3>VENUE:MAIN AUDITORIUM<br>
+TIME:3pm-6pm<br>
+CONTACT:9388066789<br>
+</h3></div>
+<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+<a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("events");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+</body>
+</html>
